@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./Img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* for Header */
+.header {
+  padding-top: 10px;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  height: 70px;
+  background-color: #b15eff;
+}
+.header img {
+  height: 50px;
+  width: 90px;
+}
+.buttons {
+  display: flex;
+  justify-content: last baseline;
+}
+.buttons div {
+  margin: 10px;
+}
+.top {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.app {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 530px;
+  height: 500px;
+}
+.box {
+  /* padding: 5px; */
+  height: 50px;
+  width: 50px;
+  border: 1px solid wheat;
+}
+
+@media (min-width: 420px) and (max-width: 560px) {
+  .game-statistics {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .header {
+    padding-top: 5px;
+    display: flex;
+
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #b15eff;
+  }
+  .header img {
+    height: 30px;
+    width: 50px;
+  }
+  .header Button {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .top {
+    font-size: 15px;
+  }
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 400px;
+  }
+  .box {
+    /* padding: 5px; */
+    height: 40px;
+    width: 40px;
+    border: 1px solid wheat;
+  }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  .game-statistics {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .header {
+    padding-top: 5px;
+    display: flex;
+    margin: 5px;
+    justify-content: space-evenly;
+    height: 70px;
+    background-color: #b15eff;
+  }
+  .header img {
+    height: 30px;
+    width: 50px;
+  }
+  .header Button {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .top {
+    font-size: 12px;
+  }
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+  .box {
+    /* padding: 5px; */
+    height: 30px;
+    width: 30px;
+    border: 1px solid wheat;
+  }
+}
+@media (min-width: 220px) and (max-width: 319px) {
+  .board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 200px;
+  }
+  .box {
+    /* padding: 5px; */
+    height: 20px;
+    width: 20px;
+    border: 1px solid wheat;
+  }
+  .game-statistics {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* History */
+.game-statistics {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.total-games {
+  color: #333;
+}
+
+.won-games {
+  color: #28a745;
+}
+
+.lost-games {
+  color: #dc3545;
+}
